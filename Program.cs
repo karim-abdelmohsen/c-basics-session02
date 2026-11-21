@@ -114,12 +114,20 @@ namespace c_basics_session02
             Console.WriteLine(reviewer==null);
             #endregion
             #region Question(13)
-            // Declare a Book? book = null;. Use ?. to safely read book.Title
+            //Declare a Book? book = null;. Use?.to safely read book.Title
             // without crashing the program, and print the result.
             Book? nullBook = null;
             string? title = nullBook?.Title;
             Console.WriteLine(title is null ? "null" : title);
             #endregion
+            #region Question(14)
+            // Using title from the previous question, use ?? to print "Untitled" if title is null.
+            // Then use ??= to assign title the value "Untitled" only if it's still null.
+            Console.WriteLine(title ?? "Untitled");
+            title ??= "Untitled";
+            Console.WriteLine(title);
+            #endregion
+
 
 
         }
