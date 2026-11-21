@@ -1,4 +1,6 @@
-﻿namespace c_basics_session02
+﻿using System.Threading.Channels;
+
+namespace c_basics_session02
 {
     internal class Program
     {
@@ -58,19 +60,27 @@
             #endregion
             #region Question(7)
             // Given string pagesText = "464";, convert it into an int using the Convert class.
-            string pagesText = "464";
-            int convInt = Convert.ToInt32(pagesText);
-            Console.WriteLine(convInt);
-            int karim;
-            karim = convInt + 5;
-            Console.WriteLine(karim); // the convert is done beacuse the opreation is done
+            //string pagesText = "464";
+            //int convInt = Convert.ToInt32(pagesText);
+            //Console.WriteLine(convInt);
+            //int karim;
+            //karim = convInt + 5;
+            //Console.WriteLine(karim); // The convert process was successful because the addition process was successful.
             // This step is an extra one I’ve added for confirmation.
             #endregion
-
-
-
-
-
+            #region Question(8)
+            // Given string yearText = "2023";, convert it using int.Parse().
+            // Then given string badText = "abc";, use int.TryParse() to safely try
+            // converting it, and print "Invalid number" if it fails.
+            string yearText = "2023";
+            int yearInt = int.Parse(yearText);
+            Console.WriteLine(yearInt);
+            string badText = "abc";
+            if (int.TryParse(badText, out int badInt))
+                      Console.WriteLine(badInt);
+            else
+                Console.WriteLine("Invalid number");
+            #endregion  
         }
 
     }
