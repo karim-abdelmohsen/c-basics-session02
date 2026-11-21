@@ -23,8 +23,26 @@
             // Look at the line below. Is it a compile-time error, a runtime error,
             // or a logical error? Fix it.
             // int pages = "464";
-            int Pages = 464; //Compile-time error
-            Console.WriteLine(Pages); 
+            //int Pages = 464; //Compile-time error
+            //Console.WriteLine(Pages); 
+            #endregion
+            #region Question(4)
+            // Write code that divides 10 by 0 inside a try block, catches the exception,
+            // prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            try
+            {
+                int zero = 0;
+                int result = 10 / zero;
+                Console.WriteLine(result);
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
             #endregion
 
 
