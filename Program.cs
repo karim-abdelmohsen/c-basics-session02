@@ -108,13 +108,18 @@ namespace c_basics_session02
             //year = 2023;
             //Console.WriteLine(year.Value);
             #endregion
-
             #region Question(12)
             // Declare a string? reviewer = null;. Print whether it is null.
             string ? reviewer = null;
             Console.WriteLine(reviewer==null);
             #endregion
-
+            #region Question(13)
+            // Declare a Book? book = null;. Use ?. to safely read book.Title
+            // without crashing the program, and print the result.
+            Book? nullBook = null;
+            string? title = nullBook?.Title;
+            Console.WriteLine(title is null ? "null" : title);
+            #endregion
 
 
         }
