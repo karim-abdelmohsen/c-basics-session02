@@ -72,17 +72,28 @@ namespace c_basics_session02
             // Given string yearText = "2023";, convert it using int.Parse().
             // Then given string badText = "abc";, use int.TryParse() to safely try
             // converting it, and print "Invalid number" if it fails.
-            string yearText = "2023";
-            int yearInt = int.Parse(yearText);
-            Console.WriteLine(yearInt);
-            string badText = "abc";
-            if (int.TryParse(badText, out int badInt))
-                      Console.WriteLine(badInt);
-            else
-                Console.WriteLine("Invalid number");
-            #endregion  
+            //string yearText = "2023";
+            //int yearInt = int.Parse(yearText);
+            //Console.WriteLine(yearInt);
+            //string badText = "abc";
+            //if (int.TryParse(badText, out int badInt))
+            //          Console.WriteLine(badInt);
+            //else
+            //    Console.WriteLine("Invalid number");
+            #endregion
+            #region Question(9)
+            // Given int pages = 464;, convert it into a string using ToString()
+            // and print its type using GetType() to prove it's now a string.
+            int pages = 464;
+            string pagesString = pages.ToString();
+            Console.WriteLine(pagesString.GetType());
+            string total;
+            total = pagesString + 55;
+            Console.WriteLine(total); // proved it
+            #endregion
+
+
         }
 
     }
     }
-
