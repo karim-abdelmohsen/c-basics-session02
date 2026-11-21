@@ -52,9 +52,19 @@
             #endregion
             #region Question(6)
             // Declare a double price = 49.99; then convert it into an int using a cast.
-            double price = 49.99;
-            int intprice = (int)price;// Explicit casting 
-            Console.WriteLine(intprice);
+            //double price = 49.99;
+            //int intprice = (int)price;// Explicit casting 
+            //Console.WriteLine(intprice);
+            #endregion
+            #region Question(7)
+            // Given string pagesText = "464";, convert it into an int using the Convert class.
+            string pagesText = "464";
+            int convInt = Convert.ToInt32(pagesText);
+            Console.WriteLine(convInt);
+            int karim;
+            karim = convInt + 5;
+            Console.WriteLine(karim); // the convert is done beacuse the opreation is done
+            // This step is an extra one I’ve added for confirmation.
             #endregion
 
 
