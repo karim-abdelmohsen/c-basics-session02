@@ -110,8 +110,8 @@ namespace c_basics_session02
             #endregion
             #region Question(12)
             // Declare a string? reviewer = null;. Print whether it is null.
-            string ? reviewer = null;
-            Console.WriteLine(reviewer==null);
+            //string ? reviewer = null;
+            //Console.WriteLine(reviewer==null);
             #endregion
             #region Question(13)
             //Declare a Book? book = null;. Use?.to safely read book.Title
