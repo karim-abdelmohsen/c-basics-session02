@@ -94,12 +94,28 @@ namespace c_basics_session02
             #region Question(10)
             // Declare int copies = 100;. Box it into an object variable,
             // then unbox it back into a new int variable, and print both.
-            int copies = 100;
-            object BoxingCopies = copies;
-            int UnBoxingCopies = (int)BoxingCopies;
-            Console.WriteLine(BoxingCopies);
-            Console.WriteLine(UnBoxingCopies);
+            //int copies = 100;
+            //object BoxingCopies = copies;
+            //int UnBoxingCopies = (int)BoxingCopies;
+            //Console.WriteLine(BoxingCopies);
+            //Console.WriteLine(UnBoxingCopies);
             #endregion
+            #region Question(11)
+            // Declare an int? year = null;. Print whether it has a value,
+            // then assign it 2023 and print its value.
+            //int? year = null;
+            //Console.WriteLine(year.HasValue);
+            //year = 2023;
+            //Console.WriteLine(year.Value);
+            #endregion
+
+            #region Question(12)
+            // Declare a string? reviewer = null;. Print whether it is null.
+            string ? reviewer = null;
+            Console.WriteLine(reviewer==null);
+            #endregion
+
+
 
         }
 
